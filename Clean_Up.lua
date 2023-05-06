@@ -126,7 +126,8 @@ do
 	f:SetScript('OnUpdate', function()
 		delay = delay - arg1
 		if delay <= 0 then
-			delay = .2
+			-- delay = .2
+			delay = 1.2
 
 			local complete = Sort()
 			if complete or GetTime() > timeout then
